@@ -1,0 +1,13 @@
+<a> for link
+<b> to make bold text
+<strong> for bold text with emphasys
+<body> main HTML part
+<br> for break
+<div> it is a division or part of an HTML document
+<h1>... for titles
+<i> to make an italic text
+<img> for images in document
+<ol> is an ordered list, <ul> for an unordered list
+<li> is a list item in bulleted (ordered list)
+<p> for paragraph
+<meta>
