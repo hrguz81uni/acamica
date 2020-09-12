@@ -1,3 +1,4 @@
-*.pfd
+*.pdf
+*.txt
 *code-workspace
 docs/
