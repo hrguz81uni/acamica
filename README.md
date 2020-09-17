@@ -1,4 +1,4 @@
-# Carrera Developer Web Full Stack - Acamica
+# Repositorio de Hector Guzman
 
 Repositorio de clases y projectos de los bloques.
 
