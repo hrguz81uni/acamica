@@ -1,0 +1,500 @@
+@import url(font-awesome.min.css);
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+html {
+    scroll-padding-top: 70px;
+}
+
+header, main, section, nav, footer {
+    display: block;
+}
+
+body {
+    background: #E5E5E5;
+}
+
+header {
+    position: relative;
+    height: 100vh;
+    top: 0px;
+    margin-bottom: 60px;
+}
+
+.wall { 
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../img/wall.jpg');
+    opacity: .5;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100%;
+}
+
+
+header nav {
+    position: fixed;
+    overflow: hidden;
+    width: auto;
+    background: black;
+    height: 60px;
+    width: 100%;
+    text-align: center;
+    top: 0px;
+    z-index: 900;
+}
+
+header nav ul {
+    margin: 0;
+    left: 50%;
+    list-style: none;
+    text-align: center;
+    display: block;
+}
+
+header nav li {
+    display: inline-block;
+    padding: 14px 16px;
+    text-align: center;
+}
+
+header nav li a {
+    cursor: pointer;
+    text-decoration: none;
+    color: #8743DD;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 30px;
+    text-transform: lowercase;
+}
+
+header nav li a:hover {
+    cursor: pointer;
+    text-decoration: none;
+    color: wheat;
+}
+  
+
+header .logo {
+    position: absolute;
+    width: 80vw;
+    height: 50vh;
+    left: 15%;
+    top: 40%;
+}
+
+section {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+section #bio {
+    background: white;
+    color: black;
+    margin-top: 200px;
+}
+
+section #integrantes {
+    background: white;
+    color: black;
+}
+
+section #galeria {
+    background: white;
+    color: black;
+}
+
+section #discografia {
+    background: white;
+    color: black;
+}
+
+section #spotify {
+    color: black;
+}
+
+section #links {
+    color: black;
+}
+
+section #contacto {
+    color: black;
+    padding-bottom: 20px;
+}
+
+section h2 {
+    color: #8743DD;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 59px;
+    text-transform: lowercase;
+}
+
+section div .form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    margin-left: 0px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+section div .bio {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    margin-left: 0px;
+    margin-right: 10px;
+}
+
+section div .bio p {
+    color: black;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 20px;
+    text-align: justify;
+    padding: 8px;
+}
+
+section div .integrantes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    margin-left: 0px;
+    margin-right: 10px;
+}
+
+section div .discografia {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    margin-left: 0px;
+    margin-right: 10px;
+}
+
+section div .spotify {
+    display: flex;
+    background: white;
+    align-items: center;
+    width: 100%;
+    height: 400px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-left: 10px;
+}
+
+section div .links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    margin-left: 0px;
+    margin-right: 10px;
+    text-decoration: none;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+}
+
+section div .contacto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    width: 100%;
+    height: 600px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    margin-left: 0px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+
+.teams {
+    display: flex;
+    margin: 20px;
+}
+
+.card {
+    flex: 1;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 20%;
+    margin-left: 24px;
+    margin-right: 24px;
+  }
+
+.card img {
+    width: 100%;
+    height: 414px;
+}
+
+.container {
+    padding: 2px 16px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    text-align: justify;
+}
+
+.galeria {
+    width: 95%;
+    margin: 1em auto;
+}
+
+.masonry {
+    margin: 1.5em 0;
+    padding: 0;
+    -moz-column-gap: 1.5em;
+    -webkit-column-gap: 1.5em;
+    column-gap: 1.5em;
+}
+
+.item {
+    display: inline-block;
+    background: #fff;
+    padding: 1.5em;
+    margin: 0 0 1.5em;
+    width: 100%;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.18);
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+}
+
+.masonry img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    }
+
+    @media only screen and (min-width: 700px) {
+        .masonry {
+            -moz-column-count: 2;
+            -webkit-column-count: 2;
+            column-count: 2;
+        }
+    }
+    
+    @media only screen and (min-width: 900px) {
+        .masonry {
+            -moz-column-count: 3;
+            -webkit-column-count: 3;
+            column-count: 3;
+        }
+    }
+    
+    @media only screen and (min-width: 1100px) {
+        .masonry {
+            -moz-column-count: 4;
+            -webkit-column-count: 4;
+            column-count: 4;
+        }
+    }
+    
+    @media only screen and (min-width: 1280px) {
+        .galeria {
+            width: 1260px;
+        }
+    }
+
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type=number] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+input[type=email] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button[type=submit] {
+  width: 100%;
+  background-color: #8743DD;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button[type=submit]:hover {
+  background-color: #872CCC;
+}
+
+.links {
+    display: inline-flex;
+    width: 100%;
+    height: 150px;
+    left: 25px;
+    top: 155px;
+    background: white;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+.links p {
+    display: flex;
+    float: left;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 50px;
+}
+
+.links a {
+    display: flex;
+    margin-left: 50%;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    width: 160px;
+    height: 60px;
+    color: white;
+    background: #8743DD;
+    border-radius: 4px;
+    text-decoration: none;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+}
+
+.link a :hover {
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+}
+
+footer {
+    display: flex;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background: black;
+    color: white;
+    height: 180px;
+}
+
+footer .container-footer {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer .copyright {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+}
+
+footer a {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+footer a:hover {
+    color: #FFF;
+}
+
+
+footer ul {
+    list-style: none;
+    display: inline-block;
+    cursor: default;
+    list-style: none;
+    padding-left: 0;
+}
+
+footer ul li {
+    display: inline-block;
+    padding: 0 1rem 0 0;
+}
+
+footer ul li:last-child {
+    padding-right: 0;
+}
+
+footer ul li .icon:before {
+    font-size: 2rem;
+}
+
+.icon {
+    text-decoration: none;
+    border-bottom: none;
+    position: relative;
+}
+
+.icon:before {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-transform: none !important;
+}
+
+.icon > .label {
+    display: none;
+}
