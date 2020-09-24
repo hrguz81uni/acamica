@@ -1,0 +1,34 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: auto;
+    height: auto;
+}
+
+.cuadrado {
+    display: block;
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    top: 20%;
+    left: 30%;
+    background: blue;;
+}
+
+.cuadrado:hover{
+    -webkit-animation: run 2s infinite; /* Safari 4+ */
+    -moz-animation:   run 2s infinite; /* Fx 5+ */
+    -o-animation:      run 2s infinite; /* Opera 12+ */
+    animation:         run 2s infinite; /* IE 10+, Fx 29+ */
+}
+@keyframes run {
+    from {
+      transform: translateX(0) rotate(0deg);
+    }
+    to {
+      transform: translateX(0) rotate(360deg);
+    }
+  }
