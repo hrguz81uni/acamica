@@ -21,11 +21,12 @@ body {
 }
 
 .cuadrado:hover{
-    -webkit-animation: run 2s infinite; /* Safari 4+ */
-    -moz-animation:   run 2s infinite; /* Fx 5+ */
-    -o-animation:      run 2s infinite; /* Opera 12+ */
-    animation:         run 2s infinite; /* IE 10+, Fx 29+ */
-}
+    -webkit-animation: run 1s infinite; /* Safari 4+ */
+    -moz-animation:   run 1s infinite; /* Fx 5+ */
+    -o-animation:      run 1s infinite; /* Opera 12+ */
+    animation:         run 1s infinite; /* IE 10+, Fx 29+ */
+    animation-timing-function: linear;
+  }
 @keyframes run {
     from {
       transform: translateX(0) rotate(0deg);
