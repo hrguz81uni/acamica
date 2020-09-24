@@ -426,7 +426,7 @@ button[type=submit]:hover {
 
 footer {
     display: flex;
-    position: fixed;
+    position: relative;
     align-items: center;
     justify-content: center;
     padding: 20px;
