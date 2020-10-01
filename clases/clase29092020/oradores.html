@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,8 +7,58 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
+        <header>
+            <div class="banner">
+                <img src="assest/logo_evento_fake.svg" alt="Banner Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="oradores.html">Oradores</a></li>
+                    <li><a href="llegar.html">Como llegar</a></li>
+                    <li><a href="sponsors.html">Sponsors</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="main_left">
+                <h2>Título del Evento</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium eum, necessitatibus odio voluptas quasi quo velit atque praesentium doloremque vero modi sed odit sint. Asperiores, consectetur. Voluptatem a incidunt excepturi dolorem quod magni labore velit? Nesciunt dolorem odit, doloremque impedit, a libero similique vero suscipit molestias repudiandae temporibus commodi aliquam eius. Aliquam temporibus reprehenderit quaerat, voluptas sunt sint cum aspernatur impedit in minima rem consequuntur dicta ratione, sapiente natus aperiam!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium eum, necessitatibus odio voluptas quasi quo velit atque praesentium doloremque vero modi sed odit sint. Asperiores, consectetur. Voluptatem a incidunt excepturi dolorem quod magni labore velit? Nesciunt dolorem odit, doloremque impedit, a libero similique vero suscipit molestias repudiandae temporibus commodi aliquam eius. Aliquam temporibus reprehenderit quaerat, voluptas sunt sint cum aspernatur impedit in minima rem consequuntur dicta ratione, sapiente natus aperiam!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium eum, necessitatibus odio voluptas quasi quo velit atque praesentium doloremque vero modi sed odit sint. Asperiores, consectetur. Voluptatem a incidunt excepturi dolorem quod magni labore velit? Nesciunt dolorem odit, doloremque impedit, a libero similique vero suscipit molestias repudiandae temporibus commodi aliquam eius. Aliquam temporibus reprehenderit quaerat, voluptas sunt sint cum aspernatur impedit in minima rem consequuntur dicta ratione, sapiente natus aperiam!</p>
+            </section>
+            <section class="main_right">
+                <h2>Registrate</h2>
+                <div class="form">
+                    <form action="form_enviado.html" method="POST" enctype="multipart/form-data">
+                        <div>
+                            <label for="nombre"></label>
+                            <input autocomplete="off" name="nombre" id="nombre" type="text" placeholder="Nombre" tabindex="1">
+                        </div>
+                        <div>
+                            <label for="apellido"></label>
+                            <input autocomplete="off" name="apellido" id="apellido" type="text" placeholder="Apellido" tabindex="2">
+                        </div>
+                        <div>
+                            <label for="edad"></label>
+                            <input autocomplete="off" name="edad" id="edad" type="number" placeholder="Edad" tabindex="3">
+                        </div>
+                        <div>
+                            <label for="email"></label>
+                            <input autocomplete="off" name="email" id="email" type="email" placeholder="algo@algo.com" tabindex="4">
+                        </div>
+                        <div>
+                            <p>
+                                <button id="enviar" type="submit" name="enviar" tabindex="5">Enviar</button>
+                            </p>
+                        </div>
+                    </form>
+                </div>
+            </section>
+            <div class="clearfloat"></div>
+        </main>
+        <footer>
+            <p>&copy El evento y todo el sitio esta protegido por los derechos de IT Eventos.</p>
+        </footer>
 </body>
 </html>

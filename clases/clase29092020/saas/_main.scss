@@ -24,7 +24,6 @@ section.main_left {
 section.main_right {
     width: 40%;
     padding: 20px 20px 20px 20px;
-    border: 2px black;
     border-style: solid;
     h2 {
         display: flex;
@@ -46,6 +45,11 @@ section.main_right {
             margin: 8px 0;
             box-sizing: border-box;
             line-height: 30px;
+            padding: 12px 20px;
+            margin: 20px 0;
+            border-radius: 4px;
+            font-family: 'Roboto', sans-serif;
+            font-size: 20px;
         &:focus{
             border: 1px dashed black;
         }}
@@ -61,6 +65,7 @@ section.main_right {
             font-family: 'Roboto', sans-serif;
             font-weight: bold;
             font-size: 20px;
+            border-radius: 4px;
         }
     }
 }
