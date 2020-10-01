@@ -66,6 +66,14 @@ section.main_right {
             font-weight: bold;
             font-size: 20px;
             border-radius: 4px;
+            transition-duration: 0.4s;
+            &:focus{
+                border: 1px dashed black;
+            }
+            &:hover{
+                background: $button_color_hover;
+                box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+            }
         }
     }
 }

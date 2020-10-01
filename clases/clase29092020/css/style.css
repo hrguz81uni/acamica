@@ -147,7 +147,13 @@ section.main_right {
       font-family: 'Roboto', sans-serif;
       font-weight: bold;
       font-size: 20px;
-      border-radius: 4px; }
+      border-radius: 4px;
+      transition-duration: 0.4s; }
+      section.main_right form button[type="submit"]:focus {
+        border: 1px dashed black; }
+      section.main_right form button[type="submit"]:hover {
+        background: #8d2571;
+        box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19); }
 
 .clearfloat {
   clear: both; }
