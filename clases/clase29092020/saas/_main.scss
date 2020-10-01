@@ -69,14 +69,104 @@ section.main_right {
             transition-duration: 0.4s;
             &:focus{
                 border: 1px dashed black;
+                cursor: pointer;
             }
             &:hover{
                 background: $button_color_hover;
                 box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+                cursor: pointer;
             }
         }
     }
 }
 .clearfloat {
     clear: both;
+}
+
+.orador_box {
+    display: flex;
+    justify-content: space-around;
+    margin: 40px 0;
+}
+
+.orador_box_image {
+    display: flex;
+    width: 30%;
+    img {
+        border: 2px $color_img_box solid;
+        border-radius: 50px;
+        width: 100px;
+        height: 100px;
+    }
+}
+
+.orador_box_detail {
+    display: flexbox;
+    justify-content: center;
+    line-height: 30px;
+    width: 50%;
+    h3 {
+        font-family: 'Roboto', sans-serif;
+        font-weight: bold;
+    }
+    h4 {
+        font-family: 'Roboto', sans-serif;
+    }
+}
+
+.orador_box_detail_social {
+    display: flex;
+    position: relative;
+    line-height: 40px;
+    ul {
+        display: flex;
+        width: 50%;
+        justify-content: space-around;
+        list-style: none;
+        li {
+            margin: 0;
+            .icon {
+                text-decoration: none;
+                border-bottom: none;
+                position: relative;
+                color: $color_social_icons;
+                &:before {
+                    -moz-osx-font-smoothing: grayscale;
+                    -webkit-font-smoothing: antialiased;
+                    font-family: FontAwesome;
+                    font-style: normal;
+                    font-weight: normal;
+                    text-transform: none !important;
+                    font-size: 1.2em;
+                }
+                &:hover {
+                    color: $color_social_icons_hover;
+                }
+            }
+            .icon > .label {
+                display: none;
+            }
+        }
+    }
+}
+
+.llegar_box_mapa {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+    border: 2px solid $color_img_box;
+    img {
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: cover;
+        a {
+            cursor: pointer;
+            &:hover{
+                background: $button_color_hover;
+                box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+                cursor: pointer;
+            }
+        }
+    }
 }

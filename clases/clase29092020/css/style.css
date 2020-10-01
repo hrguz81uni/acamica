@@ -1,5 +1,6 @@
 /* Hago los reset de todos los componentes */
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("font-awesome.min.css");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -59,7 +60,7 @@ header {
 
 .banner img {
   width: 700px;
-  height: 60px;
+  height: 80px;
   margin: 0;
   position: relative;
   top: 50%;
@@ -68,12 +69,14 @@ header {
   transform: translate(-50%, -50%); }
 
 nav {
+  display: flex;
   position: relative;
-  width: 100%;
+  justify-content: center;
   background: black;
   line-height: 40px; }
   nav ul {
     display: flex;
+    width: 50%;
     justify-content: space-around;
     list-style: none; }
     nav ul li {
@@ -82,7 +85,8 @@ nav {
       color: white;
       font-weight: bold;
       text-decoration: none;
-      font-size: 20px; }
+      font-size: 20px;
+      transition: 0.3s; }
       nav ul a:hover {
         color: #f040c1; }
 
@@ -150,13 +154,86 @@ section.main_right {
       border-radius: 4px;
       transition-duration: 0.4s; }
       section.main_right form button[type="submit"]:focus {
-        border: 1px dashed black; }
+        border: 1px dashed black;
+        cursor: pointer; }
       section.main_right form button[type="submit"]:hover {
         background: #8d2571;
-        box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19); }
+        box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+        cursor: pointer; }
 
 .clearfloat {
   clear: both; }
+
+.orador_box {
+  display: flex;
+  justify-content: space-around;
+  margin: 40px 0; }
+
+.orador_box_image {
+  display: flex;
+  width: 30%; }
+  .orador_box_image img {
+    border: 2px black solid;
+    border-radius: 50px;
+    width: 100px;
+    height: 100px; }
+
+.orador_box_detail {
+  display: flexbox;
+  justify-content: center;
+  line-height: 30px;
+  width: 50%; }
+  .orador_box_detail h3 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold; }
+  .orador_box_detail h4 {
+    font-family: 'Roboto', sans-serif; }
+
+.orador_box_detail_social {
+  display: flex;
+  position: relative;
+  line-height: 40px; }
+  .orador_box_detail_social ul {
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+    list-style: none; }
+    .orador_box_detail_social ul li {
+      margin: 0; }
+      .orador_box_detail_social ul li .icon {
+        text-decoration: none;
+        border-bottom: none;
+        position: relative;
+        color: black; }
+        .orador_box_detail_social ul li .icon:before {
+          -moz-osx-font-smoothing: grayscale;
+          -webkit-font-smoothing: antialiased;
+          font-family: FontAwesome;
+          font-style: normal;
+          font-weight: normal;
+          text-transform: none !important;
+          font-size: 1.2em; }
+        .orador_box_detail_social ul li .icon:hover {
+          color: #f040c1; }
+      .orador_box_detail_social ul li .icon > .label {
+        display: none; }
+
+.llegar_box_mapa {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-content: center;
+  border: 2px solid black; }
+  .llegar_box_mapa img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover; }
+    .llegar_box_mapa img a {
+      cursor: pointer; }
+      .llegar_box_mapa img a:hover {
+        background: #8d2571;
+        box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+        cursor: pointer; }
 
 footer {
   display: flex;
