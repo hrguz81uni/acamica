@@ -170,3 +170,26 @@ section.main_right {
         }
     }
 }
+
+.sponsor_box_tipos {
+    display: flexbox;
+    position: relative;
+    padding: 0px 20px 20px 20px;
+    h3 {
+        font-weight: bold;
+        line-height: 40px;
+    }
+}
+
+.sponsor_box_sponsor {
+    padding-top: 10px;
+}
+
+.sponsor_box_logos {
+    display: flex;
+    justify-content: space-around;
+    img {
+        width: 140px;
+        height: 44px;
+    }
+}

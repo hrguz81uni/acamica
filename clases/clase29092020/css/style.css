@@ -235,6 +235,24 @@ section.main_right {
         box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
         cursor: pointer; }
 
+.sponsor_box_tipos {
+  display: flexbox;
+  position: relative;
+  padding: 0px 20px 20px 20px; }
+  .sponsor_box_tipos h3 {
+    font-weight: bold;
+    line-height: 40px; }
+
+.sponsor_box_sponsor {
+  padding-top: 10px; }
+
+.sponsor_box_logos {
+  display: flex;
+  justify-content: space-around; }
+  .sponsor_box_logos img {
+    width: 140px;
+    height: 44px; }
+
 footer {
   display: flex;
   position: fixed;
