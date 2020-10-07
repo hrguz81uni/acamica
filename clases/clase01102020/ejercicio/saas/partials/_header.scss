@@ -1,0 +1,19 @@
+.contenedor_header {
+    display: block;
+    text-align: center;
+    background: chartreuse;
+    .texto_header {
+        background-color: blue;
+        h1 {
+            font-size: 2rem;
+        }
+    }
+    .imagen_header {
+        background-color: chocolate;
+        img {
+            border-radius: 50px;
+            width: 50px;
+        }
+    }
+}
+
