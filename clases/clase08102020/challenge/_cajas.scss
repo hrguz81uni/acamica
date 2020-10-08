@@ -1,0 +1,25 @@
+.contenedor {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.caja1 {
+    width: 400px;
+    height: 400px;
+    background: blue;
+}
+
+.caja2 {
+    width: 400px;
+    height: 400px;
+    background: red;
+}
+
+@media screen and (max-width: 800px) {
+    .contenedor {
+        flex-direction: column;
+    }
+}
