@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+}
+.cont{
+    display: flex;
+    background-color: rgb(158, 10, 158);
+    flex-direction: row;
+    justify-content: flex-start;
+    height: 500px;
+    width: 100vh;
+    .caja1,.caja2,.caja3,.caja4{
+        display: flex;
+        border: 1px solid orangered; /* Color del borde, debe ser más oscuro que fondo */
+        background: orange;
+        margin: 10px;
+        border-radius: 5px;
+        box-shadow: inset 3px 3px 3px rgba(255,255,255,.7), inset -2px -2px 3px rgba(0,0,0,.1), 2px 2px 10px rgba(0,0,0,.1);
+        text-shadow: 1px 1px 1px rgba(255,255,255,.9);  /* Sombra del texto */
+        align-items: center;
+        justify-content: center;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 26px;
+        font-weight: bold;
+        color: black;
+    }
+    
+    .caja1, .caja4{
+        width: 300px;
+        height: 200px;
+    }
+    
+    .caja2{
+        width: 200px;
+        height: 200px;
+    }
+    
+    .caja3{
+        align-self: flex-end;
+        width: 400px;
+        height: 200px;
+    }
+}
